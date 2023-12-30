@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write a Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Employee Portal</div>
+      <div class="menu">
+        <a class="anc" href="employeeFirstPage.html">Home</a>
+        <a class="anc" href="blogWriting.html">Write a blog</a>
+        <a class="anc" href="#">About</a>
+      </div>
+      <div class="logout">
+        <a href="first_page.html">Log out</a>
+      </div>
+    </nav>
+
+    <section class="main2 ">
+      <header class="text-center">
+        <h1>Write A Blog</h1>
+      </header>
+
+      <div class="jobPost">
+        <section class="jobPostForm">
+              <!-- Your blog writing form can go here -->
+              <form action="/blogWriting" method="post">
+                <!-- Add your blog writing form fields here -->
+                <div class="mb-3">
+                  <label for="blogTitle" class="form-label">Blog Title:</label>
+                  <input
+                    type="text"
+                    id="blogTitle"
+                    name="blogTitle"
+                    class="form-control"
+                    required
+                  />
+                </div>
+  
+                <div class="mb-3">
+                  <label for="blogContent" class="form-label"
+                    >Blog Content:</label
+                  >
+                  <textarea
+                    id="blogContent"
+                    name="blogContent"
+                    class="form-control"
+                    rows="8"
+                    required
+                  ></textarea>
+                </div>
+  
+                <button type="submit" class="btn btn-primary">Submit Blog</button>
+              </form>
+      </section>
+    </div>
+
+    </section>
+
+    <!-- Add any additional sections or content as needed -->
+
+    <!-- Add your scripts or additional libraries if necessary -->
+  </body>
+</html>

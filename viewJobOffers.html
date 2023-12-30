@@ -1,0 +1,118 @@
+<!-- viewJobOffers.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Job Offers</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/public/style2.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Job Seeker Portal</div>
+        <div class="menu">
+          <a class="anc" href="jobseekerFirstPage.html">Home</a>
+          <a class="anc" href="viewJobOffers.html">Job Offers</a>
+          <a class="anc" href="viewblog.html">Blogs</a>
+          <a class="anc" href="viewJobInfo.html">New Offers</a>
+        </div>
+        <div class="logout">
+          <a href="first_page.html">Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="main2">
+      <div class="text-center">
+        <h1>JOB OFFERS</h1>
+      </div>
+      <!-- Search bar -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search job offers..." class="jobSearch">
+        <button id="searchButton" class="jobSearchButton">Search</button>
+      </div>
+
+      <div class="filters">
+      <!-- Salary Range Filter -->
+      <div class="salary-filter">
+        <label for="startSalary"><b>Start Salary:</b></label>
+        <input type="number" id="startSalary" placeholder="Enter start salary">
+        <label for="endSalary"><b>End Salary:</b></label>
+        <input type="number" id="endSalary" placeholder="Enter end salary">
+        <button id="applySalaryFilter" class="jobSearchButton2">Apply</button>
+      </div>
+
+      <!-- Date Filter -->
+      <div class="date-filter">
+        <label for="dateFilter"><b>Date Posted:</b></label>
+        <select id="dateFilter">
+          <option value="today">Today</option>
+          <option value="yesterday">Yesterday</option>
+          <option value="last7days">Last 7 Days</option>
+          <option value="lastMonth">Last Month</option>
+          <option value="lastYear">Last Year</option>
+        </select>
+        <button id="applyDateFilter" class="jobSearchButton2">Apply</button>
+      </div>
+    </div>
+
+      <!-- Display job offers here -->
+      <div class="showJobOffers">
+        <ul id="job-offers">
+          <!-- Job offers will be populated here using JavaScript -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="middle">
+      
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer py-5">
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-lg-10 m-auto">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <h4 class="py-4">ABOUT US</h4>
+                          <p>Lorem it. Deleniti facilis iusto praesentium eveniet, eaque a laudantium perspiciatis veniam consectetur at harum dolorem saepe natus. Error veniam laboriosam fuga sint.</p>   
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">CONTACT INFO</h4>
+                          <p>Address: Your address goes here. Demo Addres</p>  
+                           <p class="link py-3">Email : itjobland@gamil.com</p>
+                           <p class="link">Phone : +880166784872</p>
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">IMPORTANT LINK</h4>
+                           <p class="link py-1">View Project</p>
+                           <p class="link py-1">Testimonial</p>
+                           <p class="link py-1">Support</p>
+                          <p class="link py-1">Terms & Condition</p>
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">NEWSLETTER</h4>
+                           <p>Lorem ipsum dolor sit amet.</p>
+                           <input type="text" placeholder="Enter your email">
+                           <button class="">Go</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="viewJobOffers.js"></script>
+  </body>
+</html>
